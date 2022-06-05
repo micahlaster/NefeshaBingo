@@ -1,0 +1,75 @@
+body {
+	background-color: white;
+	color: black;
+	font-size: 20px;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+footer {
+	background-color: A0A0A0;
+	color: black;
+	font-size: 20px;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+h1, p {
+	display: inline-block;
+}
+h1, th, p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+	font-size: 28px;
+}
+table {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+th, td {
+	padding: 10px;/*10 pixels of border around each button in the cells*/
+	border: 2px #666 solid;/*2 pixel lines between cells this is taken from the padding space*/
+	text-align: center;
+	font-size: 24px;
+}
+button {/*hide the button display so the image doesnt have a grayish thing around it*/
+	border: none;
+	padding: 0;
+	background: none;
+}
+.center {
+	text-align: center;
+}
+.objective {/*nessesary so objects display relative to these objects*/
+	position: relative;
+}
+.marker {/*tells these objects to display in the absolute position where their bottom right corner is at 0,0 and makes them invisable until the script displays them*/
+	display: none;
+	position: absolute;
+	bottom:0;
+	right:0;
+}
+.row {/*tells these objects to display in the absolute position where their bottom right corner is at 0,-10 and makes them invisable until the script displays them*/
+	pointer-events: none;
+	display: none;
+	position: absolute;
+	bottom:0;
+	right:-10;/*this is to move image based on the padding of cells*/
+}
+.column {/*tells these objects to display in the absolute position where their bottom right corner is at -10,0 and makes them invisable until the script displays them*/
+	pointer-events: none;
+	display: none;
+	position: absolute;
+	bottom:-10;/*this is to move image based on the padding of cells*/
+	right:0;
+}
+.diagonal {/*tells these objects to display in the absolute position where their bottom right corner is at -10,-10 and makes them invisable until the script displays them*/
+	pointer-events: none;
+	display: none;
+	position: absolute;
+	bottom:-10;/*this is to move image based on the padding of cells*/
+	right:-10;/*this is to move image based on the padding of cells*/
+}
