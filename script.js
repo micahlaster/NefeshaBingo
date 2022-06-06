@@ -1,3 +1,10 @@
+window.addEventListener('keypress', function (e) {
+	if (e.keyCode === 13 || e.which === 13) {
+		e.preventDefault();
+		return false;
+	}
+});
+
 var winners = {//note all values in this dictionary match ids in the html
     "row1": ['a1','b1','c1','d1','e1'],
     "row2": ['a2','b2','c2','d2','e2'],
