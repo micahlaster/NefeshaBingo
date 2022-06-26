@@ -78,25 +78,25 @@ function updateBingos() {
 window.onload = function load() {
 	//statically places all the goal icons in their respective locations
 	var goals = document.getElementsByClassName("goal");
-	for(goal in goals){
+	for(let goal = 0; goal < goals.length; goal++){
 		goals[goal].src =path+goal+".png"
 	}
 	
 	//places the marked icons on their respective location
 	var markers = document.getElementsByClassName("marker");
-	for(marker in markers){
+	for(let marker = 0; marker < markers.length; marker++){
 		markers[marker].src = path+"marked.png";
 	}
 	
 	//places the colum icons where they need to be
 	var columns = document.getElementsByClassName("column");
-	for(column in columns){
+	for(let column = 0; column < columns.length; column++){
 		columns[column].src = path+"column.png";
 	}
 	
 	//places the row icons where they need to be
 	var rows = document.getElementsByClassName("row");
-	for(row in rows){
+	for(let row = 0; row < rows.length; row++){
 		rows[row].src = path+"row.png";
 	}
 	
